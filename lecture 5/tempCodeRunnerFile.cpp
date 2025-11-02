@@ -1,0 +1,1 @@
+cout<<"is not a prime nuber"<<endl;
