@@ -20,5 +20,5 @@ int n ;
 int r;
 cin>> n >> r;
 cout<< "n combination r is "<< nCr(n , r);
-
+return 0;
 }
