@@ -21,16 +21,5 @@ else {
     cout<<"not a prime number"<<endl;
 }
     return 0;
-}/*
-#include<iostream>
-using namespace std;
-int update(int a){
-    int ans = a*a;
-    return ans;
-
 }
-int main(){
-int a=2;
-cout<< update(a) <<endl;
-return 0;
-}*/
+
