@@ -4,9 +4,6 @@ int maxvalue(int zeta[] , int n){
 int maxnum = INT_MIN;
 for (int i=0 ; i<n ; i++){
 maxnum=max(maxnum,zeta[i]);
-//if(zeta[i] > max ){
-  //  max=zeta[i];
-//}
 }
 return maxnum;
 
@@ -16,9 +13,6 @@ int minvalue(int zeta[] ,int n){
 int minnum =INT_MAX;
 for (int i=0; i<n ; i++){
 minnum=min(minnum,zeta[i]);
-//if(zeta[i] <min ){
-  //  min = zeta[i];
-//}
 }
 return minnum;
 
