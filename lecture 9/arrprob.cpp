@@ -8,7 +8,10 @@ for(int i=0 ; i<n ; i++){
 void altswap(int arr[] , int n){
     for(int i=0; i<n; i+=2){
 if(i + 1 < n){
-    swap(arr[i] , arr[i +1]);
+    int temp=arr[i+1];
+    arr[i+1]=arr[i];
+    arr[i]=temp;
+    //swap(arr[i] , arr[i +1]);
 }
     }
 }
