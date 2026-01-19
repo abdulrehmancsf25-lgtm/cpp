@@ -22,7 +22,7 @@ int main(){
     cout << d.max_size() << "is max size" << endl;
     cout<< "front element "<<d.front() <<endl;
     cout << " before deleting elements "<<d.size();
-    //deleting one element from deque ;
+    //deleting one element from deque 
     d.erase(d.begin() ,d.begin( ) + 1 );
  cout << " after deleting elements "<<d.size();
   cout << d.max_size() << "is max size" << endl;
