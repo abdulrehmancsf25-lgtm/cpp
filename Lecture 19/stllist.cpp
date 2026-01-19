@@ -22,8 +22,8 @@ int main(){
        //std::vector has Random Access Iterators.
        //  Since a vector is one continuous block of memory, the compiler can "jump" to any position instantly using math (e.g., begin() + 10).
 
-//std::list has Bidirectional Iterators. 
-// Because it is a linked list, elements are scattered in memory. 
+//std::list has Bidirectional Iterators
+// Because it is a linked list, elements are scattered in memory
 // To get to the next element, the computer must physically follow a pointer from the current node.
 //  It cannot "calculate" the position of the next node without visiting the ones before it.
 
