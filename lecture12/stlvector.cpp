@@ -37,7 +37,7 @@ for (int i = 0 ; i < v.size() ; i++){
            cout << endl;
 vector<int> last(arr) ;
  for(int i = 0 ; i < last.size() ;i++ ){
-            cout << last[i] << " " ;
+            cout << last.at(i) << " " ;
            }
 
 
