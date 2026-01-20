@@ -2,7 +2,7 @@
 #include<stack>
 using namespace std;
 int main(){
-    // stack -> first in last out OR last in first out 
+    // stack -> first in last out OR  last in first out 
     stack <string> my ;
     my.push("Arshad");
     my.push("Rehman");
