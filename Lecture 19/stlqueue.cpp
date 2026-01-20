@@ -2,7 +2,7 @@
 #include<queue>
 using namespace std ;
 int main(){
-    // Queue -> first in first out like a line or queue
+    // Queue --> first in first out like a line or queue
     queue<string> opp ;
     opp.push("Abdul");
     opp.push("Rehman");
