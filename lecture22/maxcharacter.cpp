@@ -23,9 +23,6 @@ char maxOccCharacter(string s){
 
 }
 
-
-
-
 int main(){
       string s ;
 cout << " Enter the string "<< endl;
