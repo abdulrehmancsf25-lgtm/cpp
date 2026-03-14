@@ -45,3 +45,7 @@ else
               cout << "value of double pointer p9 is " << **p9 << endl ;                          
     return 0 ;
 }
+
+
+
+// abdul
