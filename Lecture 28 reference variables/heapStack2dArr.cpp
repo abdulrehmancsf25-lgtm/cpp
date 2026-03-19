@@ -21,5 +21,18 @@ int main(){
         }
         cout << endl ;
     }
+    for(int i = 0 ; i < n ;i++)
+        delete[]  arr[i] ;   // DEALLOCATING ROWS 
+
+        delete[] arr ; // DEALLOCATING POINTER ARRAY 
+        arr = nullptr ;
+ int x ;
+ cin >> x ;
+        arr = new int* [x] ;  // new pointer array
+        for(int i = 0 ; i < x ; i++){
+            arr[i] = new int [x] ;       // new rows
+
+        }
+    
     return 0 ;
 }

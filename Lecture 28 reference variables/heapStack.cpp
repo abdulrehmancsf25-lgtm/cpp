@@ -21,6 +21,14 @@ int main(){
        for(int i = 0; i < n ; i++){
         cin >> arr[i] ;
        }
- cout << "Sum of array elements is " <<  arraySum(arr , n) ;
+ cout << "Sum of array elements is " <<  arraySum(arr , n)  << endl ;
+
+ delete[] arr ;     // DEALLOCATING 
+ arr = nullptr ;
+ //Even though the memory was freed in the previous step, arr still held the old address. 
+ //Setting it to nullptr ensures you don't accidentally try to use that old, invalid memory.
+ arr = new int ;
+ *arr = 5 ;
+ cout << 5 ;
     return 0 ;
 }
