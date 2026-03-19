@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std ;
 int main(){
+    /*
     int n ;
     cin >> n;
     // CREATING 2D ARRAY USING DYNAMIC ALLOCATION(Heap memory )
@@ -30,9 +31,42 @@ int main(){
  cin >> x ;
         arr = new int* [x] ;  // new pointer array
         for(int i = 0 ; i < x ; i++){
-            arr[i] = new int [x] ;       // new rows
+            arr[i] = new int [x] ;       // new rows 
 
         }
-    
+        for(int i = 0 ; i < x ; i++){
+            for(int j = 0 ; j < x ; j++){
+                cin >> arr[i][j] ;
+            }
+        }
+         for(int i = 0 ; i < x ; i++){
+            for(int j = 0 ; j < x ; j++){
+                cout <<  arr[i][j]  << " " ;
+            }
+            cout << endl ; 
+        }
+        */
+          // CREATING 2D ARRAY USING DYNAMIC ALLOCATION OF DIFFERENT ROWS AND COLUMS SIZE
+          int rows , cols ;
+          cout << "Enter number of rows " ;
+          cin >> rows  ;
+          cout << "Enter number of columns " ;
+          cin >> cols ;
+          int** app = new int* [rows] ;
+          for(int i = 0 ; i < rows ; i++){
+            app[i] = new int [cols] ;
+          }
+          cout << "Enter the values " << endl ;
+          for(int i = 0 ; i < rows ; i++){
+            for(int j = 0 ; j < cols ; j++){
+                cin >> app[i][j] ;
+            }
+          }
+           for(int i = 0 ; i < rows ; i++){
+            for(int j = 0 ; j < cols ; j++){
+                cout <<  app[i][j] << " ";
+            }
+            cout << endl ;
+          }
     return 0 ;
 }
