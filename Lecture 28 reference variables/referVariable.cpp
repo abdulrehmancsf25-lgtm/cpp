@@ -34,7 +34,7 @@ int main(){
   int& j = i ;
   j++ ;
   cout << i << endl ;
-  */
+  
  int n = 8 ;
  cout << "Before value " <<  n << endl ;
   update1(n) ;
@@ -52,5 +52,16 @@ int main(){
    getElement2(arr , 2) = 100 ;
    cout << "PRINTING NEW SET VALUE  :  "  << getElement2(arr , 2) << endl ;
    cout <<"Printing again :  "<<  arr[2] << endl ;
+   */
+  int x = 5 , i = 4 ;
+  int& y = x ;
+  cout << y << "   " ;
+   y = i ;
+   cout << y << endl ;
+
+    y += 3 ;
+    cout << x << endl ;
+    cout << i << endl ;
+    cout <<  y << endl ;
     return 0 ;
 }
