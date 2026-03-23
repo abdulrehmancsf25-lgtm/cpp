@@ -3,11 +3,12 @@ using namespace std ;
 int main(){
     /*
     int n ;
+    cout << "Enter n value to craete n*n size array  " ; 
     cin >> n;
     // CREATING 2D ARRAY USING DYNAMIC ALLOCATION(Heap memory )
-    int** arr = new int* [n] ;
+    int** arr = new int* [n] ;     // ARRAY OF POINTERS
     for(int i = 0 ; i < n ; i++){
-        arr[i] = new int[n] ;
+        arr[i] = new int[n] ;  // NEW ARRAY OF  BLOCKS(COLUMNS) 
     }
     // TAKING INPUT VALUES 
     for(int i = 0 ; i< n ; i++){
@@ -28,6 +29,7 @@ int main(){
         delete[] arr ; // DEALLOCATING POINTER ARRAY 
         arr = nullptr ;
  int x ;
+ cout << "Enter x value to create x*x size array" ;
  cin >> x ;
         arr = new int* [x] ;  // new pointer array
         for(int i = 0 ; i < x ; i++){
@@ -68,5 +70,11 @@ int main(){
             }
             cout << endl ;
           }
+            
+          // RELEASING MEMORY
+            for(int i = 0 ; i < rows ; i++)
+            delete[] app[i] ;
+
+            delete[] app ;
     return 0 ;
 }
