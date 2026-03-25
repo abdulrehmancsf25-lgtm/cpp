@@ -7,7 +7,7 @@ void print(int* ptr, int size = 5 ,int start = 0){
 }
 int main(){
     int arr[5] = {9,8,7,6,5} ;
-        print(arr) ;
+        print(arr, 5) ;
         // FOR DEAFULT CASE IN THIS CASE WHEN WE DON'T PASS SIZE AND START THE HAVE DEAFULT VALUE OF 5 & 0 
     return 0 ;
 }
