@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 using namespace std ;
 int  counting ;
@@ -22,4 +23,19 @@ int main(){
     cout << num1 << " " << num2 << " " ;
      print(num1 , num2 , 0) ;
 return 0 ;
+}
+*/
+#include<iostream>
+using namespace std ;
+int factorial(int num){
+    if(num == 0)
+    return 1 ;
+    
+    return num * factorial(num -1 ) ;
+}
+int main(){
+  int num ;
+  cin >> num ;
+  cout << factorial(num) ;
+    return 0 ;
 }
