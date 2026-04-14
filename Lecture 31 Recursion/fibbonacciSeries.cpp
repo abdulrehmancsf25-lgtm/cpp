@@ -25,6 +25,7 @@ int main(){
 return 0 ;
 }
 */
+/*
 #include<iostream>
 using namespace std ;
 int factorial(int num){
@@ -38,4 +39,28 @@ int main(){
   cin >> num ;
   cout << factorial(num) ;
     return 0 ;
+}
+*/
+
+#include<iostream>
+using namespace std ;
+
+int printNumber (int num){
+  
+    // BASE CASE 
+    if(num == 1 )
+    return 0 ;
+    if(num == 2 ) 
+    return 1 ;
+
+   return printNumber(num -1) + printNumber(num - 2 ) ; 
+
+}
+int main(){
+    int nthFibNo ;
+    cout << "Enter the nth fibonacci number to print " ;
+    cin >> nthFibNo ;
+ cout <<   printNumber(nthFibNo ) << endl ;
+   
+return 0 ;
 }

@@ -4,17 +4,15 @@ void printDigits(int num){
        
     string arr[10] = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
         // BASE CASE 
-    for(int i = 0 ; i < 10 ; i++){
-        if(num == i){
-            cout << arr[i] << " " ;
-            return ;
-        }
-    }
+        if(num < 10 ){
+         cout << arr[num] << " " ;
+         return ;
+          }
         // PROCESSING 
      int digit = num % 10 ;
      num = num / 10 ;
        // RECURSIVE CALL 
-     printDigits(num) ;
+   printDigits(num) ;
    printDigits(digit)  ;
  }
   
