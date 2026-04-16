@@ -7,7 +7,7 @@ return arr[0] ;
 /*
  int remain = arraySum(arr+1 , size -1 ) ;
  int maxi ;
-  if(arr[0] > remain  ) 
+if(arr[0] > remain  ) 
   maxi = arr[0] ;
  else maxi = remain ;
 return maxi ;   
