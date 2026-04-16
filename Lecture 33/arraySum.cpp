@@ -5,7 +5,7 @@ int arraySum(int * arr ,  int size){
 if(size == 1)
 return arr[0] ;
 
-//  int remainingPart =   arraySum(arr + 1 , size -1 ) ;  
+ //  int remainingPart =   arraySum(arr + 1 , size -1 ) ;  
  // int ans = arr[0] + remainingPart ;
 
 return arr[0] + arraySum(arr +1 , size -1 ) ;
