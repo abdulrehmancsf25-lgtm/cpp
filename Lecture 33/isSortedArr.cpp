@@ -1,18 +1,17 @@
 #include<iostream>
 using namespace std ;
-bool isSorted(int* arr , int size  ){
-  
-    // BASE CASE 
-    if(size == 0 || size == 1 )
-    return true  ;
-   
-    if(arr[0] > arr[1])
-    return false ;
-   
-  return   isSorted(arr +1 , size - 1 ) ;
-}
+bool isSorted(int* arr , int size ){
+   // base case 
+   if(size == 0 || size == 1 )
+   return true ;
+
+  if(arr[0] > arr[1])
+  return false ;
+
+  return  isSorted(arr + 1 , size -1 ) ; 
+} 
 int main(){
-        int arr[] = {101,222,345,400,590} ;
+        int arr[] = {101,222,345,400,90} ;
         int size = sizeof(arr) /4 ;
     bool ans =  isSorted(arr , size  ) ;
     if(ans)
