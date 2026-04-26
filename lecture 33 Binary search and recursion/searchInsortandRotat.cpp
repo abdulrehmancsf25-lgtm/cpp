@@ -17,7 +17,7 @@ int searchFunc(int* arr , int start , int end , int target){
   if(start > end)
   return -1 ;
   int mid  = start + (end - start) /2  ;
-  if(arr[mid] == target )
+  if(arr[mid] == target)
   return mid ;
   if(arr[mid] > target)
   return searchFunc(arr , start , mid -1 , target);
