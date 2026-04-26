@@ -15,6 +15,7 @@ int peak_Element(int* arr , int s , int e ){
     return peak_Element( arr , s , mid  ) ;
    
 }
+
 int main(){
     int arr[] = {2,4,6,8,7,4,2,1} ;
     int end = sizeof(arr) /4 -1 ;
