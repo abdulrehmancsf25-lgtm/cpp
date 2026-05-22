@@ -17,8 +17,10 @@ int binary_Search(int* arr , int s , int e ,int key){
 }
 int main(){
     int arr[] = {2,4,6,8,10,12} ;
-    int end = sizeof(arr) /2 -1 ;
-    int ans = binary_Search(arr , 0 , end ,12 ) ;
+    int end = sizeof(arr) /2 -1  , key ;
+    cout << "Enter target to search for " ;
+    cin >> key ;
+    int ans = binary_Search(arr , 0 , end ,key) ;
     if( ans != -1)
     cout << "element found at index " << ans ; 
     else
