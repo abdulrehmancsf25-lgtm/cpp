@@ -5,7 +5,7 @@ class animals{
               string name ;
                int legs ;
             protected:
-            int height ;
+            int height ; 
             public:
             void getName(){
                  cout << "Name : " << name << endl ; 
