@@ -68,7 +68,7 @@ void delNode(Node* &tail,int target){
                     previous = current ;
                     current = current->next ;
                 }
-                // element found 
+              // element found 
                 if(current == previous)
                   tail = nullptr ;
                 else if(current == tail)

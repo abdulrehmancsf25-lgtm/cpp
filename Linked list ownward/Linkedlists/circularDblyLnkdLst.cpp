@@ -81,7 +81,6 @@ void deleteNode(Node* &tail , int target){
         prevNode = currNode ;
         currNode = currNode ->next ;
     }
-     
     // target found
        if(currNode == prevNode)
         tail = nullptr ;
