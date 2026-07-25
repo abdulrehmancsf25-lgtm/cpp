@@ -1,0 +1,58 @@
+🏥 Hospital Management System
+
+A C++ console-based application that manages patient and doctor records.
+This system uses Object-Oriented Programming (OOP) principles and file handling to securely store, retrieve, edit, and delete hospital records using CSV files.
+
+
+📖 User Manual: Navigating the System
+When you launch the application, you will see a main menu with 7 options. Enter the number corresponding to the action you want to perform.
+
+1) Add Patient
+Registers a new patient into the active memory.
+
+ID Generation: You can choose 0 to have the system auto-generate a valid ID, or 1 to enter one manually.
+
+Manual ID Rule: Patient IDs must start with the digit 5 (e.g., 50012). The system will reject IDs that do not follow this rule or that already exist in the database.
+
+Details Required: Name, Age, Gender, Blood Group, Disease, and Bed Number.
+
+2) Add Doctor
+Registers a new doctor into the active memory.
+
+ID Generation: Choose 0 for auto-generation or 1 for manual entry.
+
+Manual ID Rule: Doctor IDs must start with the digit 1 (e.g., 1045).
+
+Details Required: Name, Age, Gender, Specialty, and Consultation Fee.
+
+3) Save Data to File
+Important: Patients and Doctors added using Options 1 and 2 are stored in temporary memory. You must select Option 3 to write them permanently to the CSV files. Once saved, the temporary memory is cleared to prevent duplicate entries.
+
+4) View Data in File (Previous Records)
+Displays a formatted list of all saved records directly from the CSV files. It prints all patient records first, followed by all doctor records, making it easy to review the current database.
+
+5) Edit Existing Profiles
+Allows you to update information for a specific person.
+
+You will be prompted to enter the ID of the patient or doctor.
+
+The system detects whether the ID belongs to a patient (starts with 5) or a doctor (starts with 1) and will guide you through updating their specific attributes.
+
+6) Delete Records
+Removes a specific record permanently from the CSV database.
+
+Enter the ID of the person you wish to remove.
+
+The system searches the appropriate file, deletes the row, and instantly saves the updated file.
+
+7) Exit
+Safely closes the application.
+
+⚠️ Important Troubleshooting Notes
+Spaces in Input: When prompted for inputs like "Name" or "Disease", you can type full sentences with spaces (e.g., "John Doe").
+The system uses getline() to capture everything.
+
+File Access Error: If the program crashes or fails to save, ensure that patient_records.csv and doctor_records.csv are not currently open in Microsoft Excel or another spreadsheet program.
+Excel locks the files and prevents the C++ program from writing to them.
+
+Input Validation: If you accidentally type a letter when the menu asks for a number, the system will clear the error and ask you to try again without crashing.

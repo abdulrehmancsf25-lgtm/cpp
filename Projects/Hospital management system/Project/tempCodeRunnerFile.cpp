@@ -1,0 +1,1 @@
+ while (!hospital.is_valid_ID(id)){
