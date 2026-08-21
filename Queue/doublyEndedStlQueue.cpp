@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-             deque<int> d1 ;
+             deque<int> d1;
             d1.push_front(1) ;
             d1.push_back(2) ;
             d1.push_front(0) ;
@@ -23,7 +23,7 @@ int main() {
             d1.clear() ;
             
             cout << endl ;
-            
+
             if(d1.empty())
             cout << "Doubly ended queue is empty " << endl ;
             else 

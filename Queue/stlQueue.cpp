@@ -20,6 +20,6 @@ int main()
         cout << "Queue is not empty " << endl;
 
     q1.pop();
-    cout << "Front after poping : " << q1.front() << endl;
+    cout << "Front after poping : " << q1.front() <<endl;
     return 0;
 }

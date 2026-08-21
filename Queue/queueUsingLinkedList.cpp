@@ -127,6 +127,6 @@ int main()
     q1.pop();
     cout << "After poping " << endl;
     cout << "Front : " << q1.front() << endl;
-
+  
     return 0;
 }
