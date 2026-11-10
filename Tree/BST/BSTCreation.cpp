@@ -12,7 +12,7 @@ class Node{
         this->right = NULL ;
     }
 };
-Node* buildBST(Node* root , int data){
+Node* buildBST(Node* &root , int &data){
     if(root == NULL){
         root = new Node(data) ;
         return root ;
