@@ -1,4 +1,4 @@
-// CONVERTING BST INTO LINKED LIST OF INORDER TRAVERSEL 
+// CONVERTING BST INTO LINKED LIST OF INORDER TRAVERSEL
 // (inorder of BST is sorted)
 #include <iostream>
 using namespace std;
@@ -31,23 +31,23 @@ Node *buildBST(Node *root, int data)
     return root;
 }
 Node *findPredecessor(Node *root)
-{   
-   
+{
+
     Node *pred = root;
     pred = pred->left;
 
-    while (pred != NULL && pred->right != NULL && pred ->right != root)
+    while (pred != NULL && pred->right != NULL && pred->right != root)
     {
         pred = pred->right;
     }
     return pred;
 }
-Node*MorrisInOrderLinkedList(Node *root)
+Node *MorrisInOrderLinkedList(Node *root)
 {
-    Node* head = new Node() ;
-    Node* dummy  = head;
+    Node *head = new Node();
+    Node *dummy = head;
 
-    Node* curr = root ;
+    Node *curr = root;
 
     while (curr != NULL)
     {
@@ -62,24 +62,24 @@ Node*MorrisInOrderLinkedList(Node *root)
             else
             {
                 predecessor->right = NULL;
-                dummy -> right = curr ;
-                dummy = curr ;
+                dummy->right = curr;
+                dummy = curr;
                 curr = curr->right;
-                dummy -> left = NULL ;
+                dummy->left = NULL;
             }
         }
         else
         {
-            dummy -> right = curr ;
-            dummy = dummy -> right ;
+            dummy->right = curr;
+            dummy = dummy->right;
             curr = curr->right;
-            dummy -> left = NULL ;
+            dummy->left = NULL;
         }
     }
-    
-    dummy = head -> right ;
-    delete head ;
-    return dummy ;
+
+    dummy = head->right;
+    delete head;
+    return dummy;
 }
 Node *insertDataInBst(Node *root)
 {
@@ -95,18 +95,17 @@ Node *insertDataInBst(Node *root)
     return root;
 }
 
-    
-
 int main()
 {
     Node *root = NULL;
     root = insertDataInBst(root);
     cout << endl;
-    
-     Node* linkedLstHead = MorrisInOrderLinkedList(root) ;
-     while(linkedLstHead){
-         cout << linkedLstHead ->val << "  " ;
-         linkedLstHead = linkedLstHead -> right ;
-     }
+
+    Node *linkedLstHead = MorrisInOrderLinkedList(root);
+    while (linkedLstHead)
+    {
+        cout << linkedLstHead->val << "  ";
+        linkedLstHead = linkedLstHead->right;
+    }
     return 0;
 }

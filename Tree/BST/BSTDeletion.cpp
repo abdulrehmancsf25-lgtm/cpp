@@ -29,8 +29,8 @@ Node *buildBST(Node *root, int data)
     return root;
 }
 Node *findPredecessor(Node *root)
-{   
-   
+{
+
     Node *pred = root;
     pred = pred->left;
 
@@ -85,12 +85,12 @@ Node *deleteNode(Node *root, int data)
 {
     if (root == NULL) // BASE CASE
         return NULL;
-    if (data < root->val) 
+    if (data < root->val)
         root->left = deleteNode(root->left, data);
     else if (data > root->val)
         root->right = deleteNode(root->right, data);
     else
-    { // equal to root -> data
+    {                                        // equal to root -> data
         if ((!root->left) && (!root->right)) // no child
         {
             delete root;
@@ -112,8 +112,8 @@ Node *deleteNode(Node *root, int data)
         { // both child exist (using inorder predecessor logic)
             Node *temp = findPredecessor(root);
             root->val = temp->val;
-            
-            root->left = deleteNode(root->left  , temp ->val) ;
+
+            root->left = deleteNode(root->left, temp->val);
         }
     }
     return root;
@@ -123,8 +123,8 @@ int main()
 {
     Node *root = NULL;
     root = insertDataInBst(root);
-    cout << endl
-         << "---PRINTTING MORRIS_TRAVERSEL INORDER (LNR)---" << endl;
+    cout << endl;
+    << "---PRINTTING MORRIS_TRAVERSEL INORDER (LNR)---" << endl;
     MorrisInOrder(root);
     return 0;
 }
